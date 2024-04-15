@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+header {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+h1 {
+    /* font-style: Verdana, sans-serif; */
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    color: black;
+    font-size: medium;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
