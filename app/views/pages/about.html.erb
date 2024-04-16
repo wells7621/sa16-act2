@@ -1,16 +1,36 @@
-<h3>About Me</h3>
+<%= stylesheet_link_tag 'about', media: 'all' %>
 
-<p>I'm a graduating senior at the University of Memphis looking forward to learning more about web development and hopefully securing a career down that path. I am currently expanding my skills in UI/UX design along with front-end development.</p>
+<div class="about-container">
+  <h3>About Me</h3>
 
-<p>My journey in tech began with me taking a programming class in high school, particularly exploring the language, Processing. This experience allowed me to combine my creative side with technology. From there, I realized my passion is creating meaningful interactive experiences like front-end development and UI/UX design.</p>
+  <div class="about-section">
+    <p>I'm a graduating senior at the University of Memphis looking forward to learning more about web development and hopefully securing a career down that path. I am currently expanding my skills in UI/UX design along with front-end development.</p>
+  </div>
+  <hr>
 
-<p>What’s Keeping Me Busy Lately:
-    <li>Developing a four-week auditory training program for children with hearing deficits</li>
-    <li>Currently providing exceptional customer service as a Care Support Agent at UMRF Ventures-Sedgwick</li>
-    <li>Actively seeking out opportunities in the tech industry post-graduation</li>
-</p>
+  <%= image_tag("destination-journey.png", alt: "journey image") %>
 
-<p>Fun Facts About Me:
-    <li>I love to travel and will be embarking on a study abroad trip in  Greece and Italy this spring—my first international trip!</li>
-    <li>I am a theme park enthusiast! I’ve been to Disney World, Universal Studios Orlando, and several Six Flags. Can’t wait to explore more thrills in the future!</li>
-</p>
+  <div class="about-section">
+    <p>My journey in tech began with me taking a programming class in high school, particularly exploring the language, Processing. This experience allowed me to combine my creative side with technology. From there, I realized my passion is creating meaningful interactive experiences like front-end development and UI/UX design.</p>
+  </div>
+
+  <div class="about-section">
+    <h4>What’s Keeping Me Busy Lately:</h4>
+        <ul>
+            <li>Developing a four-week auditory training program for children with hearing deficits</li>
+            <li>Currently providing exceptional customer service as a Care Support Agent at UMRF Ventures-Sedgwick</li>
+            <li>Actively seeking out opportunities in the tech industry post-graduation</li>
+        </ul>
+  </div>
+  <hr>
+
+  <%= image_tag("theme-park.png", alt: "theme park image") %>
+
+  <div class="about-section">
+    <h4>Fun Facts About Me:</h4>
+        <ul>
+            <li>I love to travel and will be embarking on a study abroad trip in  Greece and Italy this spring—my first international trip!</li>
+            <li>I am a theme park enthusiast! I’ve been to Disney World, Universal Studios Orlando, and several Six Flags. Can’t wait to explore more thrills in the future!</li>
+        </ul>
+  </div>
+</div>
